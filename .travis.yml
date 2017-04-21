@@ -1,0 +1,23 @@
+language: go
+sudo: false
+
+#install:
+#  - go get -t -v . ./regressiontests
+#  - gometalinter --install
+
+os:
+  - linux
+  - osx
+
+go:
+  - tip
+  - 1.8
+  - 1.7
+
+matrix:
+  allow_failures:
+    - go: tip
+
+
+
+#script: go test -v . ./regressiontests
