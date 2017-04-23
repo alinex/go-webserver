@@ -17,7 +17,7 @@ func init() {
 	// initialize config through viper
 	cobra.OnInitialize(initConfig)
 	// Define the flags to be supported.
-	RootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.go-learn.yaml)")
+	RootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.go-webserver.yaml)")
 }
 
 // initConfig reads in config file and ENV variables if set.
@@ -26,7 +26,7 @@ func initConfig() {
 		viper.SetConfigFile(cfgFile)
 	}
 
-	viper.SetConfigName(".go-learn")       // name of config file (without extension)
+	viper.SetConfigName(".go-webserver")   // name of config file (without extension)
 	viper.AddConfigPath(os.Getenv("HOME")) // adding home directory as first search path
 	viper.AutomaticEnv()                   // read in environment variables that match
 

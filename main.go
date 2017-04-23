@@ -4,7 +4,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/alinex/go-learn/cmd"
+	"github.com/alinex/go-webserver/cmd"
 	"github.com/fatih/color"
 )
 
@@ -42,7 +42,7 @@ func init() {
 	cyan.Println("    ##### ##########  ########################   ########### #####       #####")
 	cyan.Println("    ___________________________________________________________________________")
 	fmt.Println()
-	yellow.Println("                               T E S T - S E R V E R")
+	yellow.Println("                               W E B - S E R V E R")
 	cyan.Println("    ___________________________________________________________________________")
 	fmt.Println()
 }

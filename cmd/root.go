@@ -11,10 +11,9 @@ import (
 
 // RootCmd represents the base command when called without any subcommands
 var RootCmd = &cobra.Command{
-	Use:   "go-learn [-p <port>]",
-	Short: "Example Application Server",
-	Long: `The example application server will run a local web server for you
-to access.`,
+	Use:   "go-webserver [-p <port>]",
+	Short: "Simple Web Server",
+	Long:  `It will serve the current directory through the web server.`,
 	// Running the root command
 	Run: func(cmd *cobra.Command, args []string) {
 		port := viper.GetString("port")
