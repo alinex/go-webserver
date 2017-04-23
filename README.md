@@ -1,9 +1,19 @@
-Package: go-learn
+Package: go-webserver
 ================================================
 
+A small and easy to use web server which will serve the files of the current
+working directory over the web.
 
 
+Install
+-------------------------------------------------
+To use it compile the code using:
 
+    go install https://github.com/alinex/go-webserver
+
+Now you may distribute the generated binary and call it using:
+
+    go-webserver -p <Port>
 
 
 License
