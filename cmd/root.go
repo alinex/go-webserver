@@ -1,4 +1,3 @@
-// Package cmd contains CLI commands called through cobra.
 package cmd
 
 import (

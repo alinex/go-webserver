@@ -1,4 +1,6 @@
 // Package main starts the server from command line.
+//
+// It will listen for incoming requests.
 package main
 
 import (
@@ -13,6 +15,7 @@ func init() {
 	// color definitions
 	cyan := color.New(color.FgCyan)
 	yellow := color.New(color.FgYellow, color.Bold)
+
 	// create logo
 	cyan.Print("                            ")
 	yellow.Println(" __   ____     __")
